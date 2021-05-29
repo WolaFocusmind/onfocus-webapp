@@ -1,0 +1,124 @@
+.home__view {
+  width: auto;
+  background-image: linear-gradient(to bottom, #1c1b5200, #03002bd6),
+    url(../../static/images/img/principal-image.png);
+  background-size: cover;
+  margin: 0;
+}
+
+.home__view__figure {
+  margin: 0;
+  padding: 2% 0 0 192px;
+}
+
+.home__view__title {
+  margin: 0.5% 0 1.5% 0;
+}
+
+.home__view h1 {
+  font-family: "Mont-Bold", Roboto;
+  font-size: 35px;
+  padding: 0px 0 0 192px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  line-height: 118.3%;
+  margin: 0;
+}
+.home__view__subtitle {
+  margin: -0.6% 0 2% 0;
+}
+.home__view h3 {
+  font-size: 20px;
+  padding: 0px 0 0 192px;
+  letter-spacing: -0.02em;
+  color: #e0e0e0;
+  font-weight: 300;
+  line-height: 118.3%;
+  margin: 0;
+  font-family: "Mont-Light";
+}
+
+.display__screen__mobile {
+  display: none;
+}
+
+.slide-in-bottom-1 {
+  animation: slide-in-bottom 0.5s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-2 {
+  animation: slide-in-bottom 1s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-3 {
+  animation: slide-in-bottom 1.5s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-4 {
+  animation: slide-in-bottom 2s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-5 {
+  animation: slide-in-bottom 2.5s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-6 {
+  animation: slide-in-bottom 3s cubic-bezier(0, 0, 0.58, 1) both;
+}
+.slide-in-bottom-7 {
+  animation: slide-in-bottom 3.5s cubic-bezier(0, 0, 0.58, 1) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home__view {
+    background-position: -20px;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #1c1b5233, #03002bd6),
+      url(../../static/images/img/principal-image.png);
+  }
+  .home__view__inside {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .display__screen__mobile {
+    display: block;
+  }
+
+  .home__view__img {
+    width: 219px;
+    height: 219px;
+    display: flex;
+    margin: 0px auto 40px auto;
+  }
+
+  .home__view h1 {
+    font-size: 20px;
+    padding: 0px 0 0 43px;
+  }
+
+  .home__view h3 {
+    font-size: 16px;
+    padding: 5px 0 0 43px;
+  }
+
+  .home__view__figure {
+    margin: 0;
+    padding: 2% 0 0 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home__view {
+    background-position: -250px;
+  }
+}

@@ -1,0 +1,245 @@
+/* <-------NAVBAR-------> */
+
+.navbar {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  text-align: center;
+  background: #03002b;
+  height: 56px;
+}
+
+.navbar__img {
+  width: 35px;
+  height: 33px;
+  position: relative;
+  right: 22px;
+  bottom: 5px;
+}
+
+.navbar__menu__shopping__cart {
+  width: 30px;
+  position: relative;
+  bottom: 22px;
+  margin: 0 0 0 10px;
+}
+
+.navbar__menu__shopping__cart--fix {
+  bottom: 7px;
+}
+
+.navbar__menu__shopping__cart__notification {
+  background: #b38a58;
+  position: absolute;
+  top: 10px;
+  right: 324px;
+  z-index: 3;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+.navbar__menu__shopping__cart__notification--user {
+  right: 348px;
+}
+.navbar__menu__shopping__cart__notification--mobile {
+  background: #b38a58;
+  position: absolute;
+  right: 82px;
+  top: 10px;
+  z-index: 3;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.navbar__menu__shopping__cart__number {
+  color: #03002b;
+  font-family: "Mont-Bold";
+  font-size: 12px;
+  position: relative;
+  bottom: 4px;
+  user-select: none;
+}
+
+.navbar__element__list {
+  display: flex;
+  color: #f2f2f2;
+  list-style: none;
+}
+
+.navbar__menu {
+  font-style: normal;
+  margin: 0px 0 0 20px;
+  list-style: none;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__menu:hover {
+  color: #b38a58;
+  // transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+.navbar__menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Mont-Light;
+  width: 150px;
+  margin: 0 10px 0 0;
+}
+
+.navbar__menu--fix {
+  width: 4vw;
+  margin: 0 0px 0px 10px;
+}
+
+.navLinks {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.navbar__justify__self {
+  justify-self: end;
+  margin: 0 40px 0px 0px;
+}
+
+.navbar__hamburguer__shopping {
+  display: none;
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+
+.navbar__hamburguer {
+  display: none;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.navLinks:hover {
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 1em 1em;
+}
+
+.navbar__menu img {
+  z-index: 2;
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+.navbar__hamburguer__shopping__img__desktop--toggle {
+  filter: invert(0.5) sepia(9);
+}
+
+.navbar__hamburguer__shopping__img {
+  position: absolute;
+  right: 85px;
+  top: 10px;
+}
+.navbar__hamburguer__shopping__img--toggle {
+  filter: invert(0.5) sepia(9);
+}
+
+.navbar__menu img:hover {
+  color: #b38a58;
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.navbar__img:hover {
+  filter: invert(0.5) sepia(9);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* <-------MEDIA-------> */
+
+@media screen and (max-width: 1250px) {
+  .navbar__menu__shopping__cart__notification {
+    right: 320px;
+  }
+
+  .navbar__menu__shopping__cart__notification--user {
+    right: 346px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar__query {
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navbar__hamburguer {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .navbar__hamburguer__shopping {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .navbar__hamburguer__toggle {
+    background: #03002b;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 300;
+  }
+  .navbar__hamburguer__toggle__logo {
+    position: absolute;
+    left: 10px;
+    margin: 15px 0 0px 10px;
+  }
+  .navbar__hamburguer__toggle__arrow {
+    position: absolute;
+    right: 10px;
+    margin: 20px;
+  }
+  .navbar__hamburguer__toggle__menu {
+    list-style: none;
+    font-family: "Mont-Bold";
+    color: #fff;
+    font-size: 20px;
+    width: 350px;
+    position: relative;
+    left: 50%;
+    transform: translate(-55%, 30%);
+    margin-top: 35px;
+    text-align: left;
+  }
+
+  .navbar__hamburguer__toggle__menu__arrow {
+    margin: 15px 0px 0px 20px;
+  }
+
+  .navbar__hamburguer__toggle__menu__list li {
+    list-style: none;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+    color: #fff;
+    margin: 15px 0 0 0;
+  }
+
+  .navbar__menu__mobile__buttons {
+    position: absolute;
+    top: 50vh;
+  }
+  .navbar__menu__mobile__profile {
+    margin-top: 60px;
+  }
+}
+/* <-------MEDIA-------> */

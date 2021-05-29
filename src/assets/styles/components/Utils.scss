@@ -1,0 +1,223 @@
+.utils__hero {
+  height: 252px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(3, 0, 43, 0) 0.52%,
+      #03002bd9 113.6%
+    ),
+    url(../../static/images/img/hero-course.png);
+  background-size: cover;
+}
+
+.utils__hero__contact {
+  height: 252px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(3, 0, 43, 0) 0.52%,
+      #03002bd9 113.6%
+    ),
+    url(../../static/images/img/hero-contact.png);
+  background-size: cover;
+}
+
+.utils__hero__profile {
+  height: 254px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(3, 0, 43, 0) 0.52%,
+      #03002bd9 113.6%
+    ),
+    url(../../static/images/img/hero-profile.png);
+  background-size: cover;
+}
+
+.utils__hero__title {
+  font-family: "Mont-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 113.3%;
+  color: #f2f2f2;
+  margin: 0;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.beadcrumbs {
+  margin: 20px 0 0 0px;
+}
+.beadcrumbs--my-course__mobile {
+  margin: 0px 0px 0px -30px;
+}
+
+.beadcrumbs h5 {
+  margin: 20px 0px 0 10px;
+  font-family: Mont-Light;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135.3%;
+  letter-spacing: -0.02em;
+  color: #4f4f4f;
+}
+
+.beadcrumbs img {
+  margin: 25px 0 0 0px;
+  height: 0.5em;
+}
+
+.beadcrumbs__course {
+  margin: 0 0 0 10%;
+}
+
+.beadcrumbs h5:hover {
+  color: #b38a58;
+  cursor: pointer;
+  font-family: "Mont-Bold";
+}
+
+.modal {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.step__to__pay {
+  margin: 0 0 0 60px;
+}
+.step__to__pay__inside__title {
+  font-family: "Mont-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #828282;
+}
+.step__to__pay__inside__text {
+  font-family: "Mont-Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 136.2%;
+  letter-spacing: -0.02em;
+  color: #828282;
+  margin: 16px 20px 0px 5px;
+}
+.step__to__pay__inside__title--select {
+  color: #b38a58;
+}
+.step__to__pay__inside__text--select {
+  color: #333333;
+}
+.step__to__pay__inside img {
+  margin: 16px 10px 0 0px;
+  width: 19px;
+  height: 19px;
+}
+
+.loading_screen {
+  display: flex;
+  place-content: center;
+  height: 100vh;
+}
+
+.loading-screen-animation {
+  animation: loading-screen-animation 3s cubic-bezier(0.13, 0.11, 0.65, 0.63)
+    both;
+}
+
+@keyframes loading-screen-animation {
+  0% {
+    background: white;
+  }
+  25% {
+    background: #c8bff7;
+  }
+  50% {
+    background: #7264bf;
+  }
+  75% {
+    background: #2d1b92;
+  }
+  100% {
+    background: #0d0056;
+  }
+}
+
+.loading_screen img {
+  animation: loading-screen-icon 3s cubic-bezier(0.13, 0.11, 0.65, 0.63) both;
+}
+@keyframes loading-screen-icon {
+  0% {
+    filter: invert(0);
+  }
+  25% {
+    filter: invert(0.25);
+  }
+  50% {
+    filter: invert(0.5);
+  }
+  75% {
+    filter: invert(0.75);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .utils__hero__profile {
+    background-position: -240px;
+  }
+
+  .beadcrumbs__course {
+    margin: 0 0 0 23px;
+  }
+
+  .beadcrumbs img {
+    margin: 20px 0 0px 30px;
+  }
+  .utils__hero__contact {
+    height: 146px;
+  }
+  .utils__hero__title {
+    font-size: 24px;
+  }
+  .utils__hero__profile {
+    background-position: 0px;
+    height: 145px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .utils__hero__profile {
+    background-position: -240px;
+  }
+}
+@media screen and (max-width: 445px) {
+  .step__to__pay {
+    margin: 10px 0 0px 20px;
+  }
+  .step__to__pay__inside__text {
+    font-size: 12px;
+    margin: 19px 20px 0px 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .beadcrumbs {
+    margin: 20px 0 0 -20px;
+  }
+  .beadcrumbs--shopping {
+    margin: 20px 0 0 0px;
+  }
+  .utils__hero__profile {
+    background-position: -300px;
+  }
+}
